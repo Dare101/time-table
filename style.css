@@ -1,12 +1,18 @@
-body{
-    margin:0px;
-    padding:0px;
-    background-image:url(/bg.png);
+body {
+    height: 100%;
+    background: url('bg.png') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+
 
 nav{
     color: #ffffff;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 60px;
     padding:10px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -14,73 +20,94 @@ nav{
 
 
 #clock{
-    block-size: 20px;
     text-align: center;
-    
+}
+
+#table {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 
 
-#toprow ul{
+#table ul{
     list-style-type: none;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    padding-top: 70px;
-    margin-left: 30px;
     font-size: 30px;
     color:white;
     display:inline-block;
     width: 400px;
     height:300px;
-}
-
-a{
-    text-decoration:none;
-}
-
-a:link, a:visited {
-    color: rgb(0, 0, 0);
-}
-
-a:hover {
-    color:rgb(255, 255, 255);
-}
-
-
-#toprow li{
-    background-color:white;
-    text-align: left;
-    font-size:20px;
-    list-style-type: none;
-    text-align: center;
-    border-radius: 5px;;
-    color:black;
-    font-family:'Roboto';
-    padding-top:10px;
-    border:black;
-    border-style: double;
-    margin-bottom: 2px;
+    padding: 0 16px;
+    text-decoration-color: orangered;
+    font-weight: bolder;
+    
     
 }
 
-#toprow span{
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited {
+   color:black;
+   text-decoration: none;
+}
+
+a:hover {
+    color:black;
+}
+
+
+#table li{
+    background-color:black;
+    text-align: left;
+    font-size:20px;
+    text-align: center;
+    border-radius: 10px;
+    color:black;
+    font-family:Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    padding:0 1px;
+    border-color:black;
+    border-style:double;
+    margin-bottom: 5px;
+    background: linear-gradient(45deg,#ff7300,#ff0953);
+    font-weight: bold;
+}
+
+#table span{
     font-size: 20px;
     margin-left: 10px;
     margin-right:10px;
+    text-align: center;
+    
 }
 
-#wed{
+
+
+.dropdown {
+    position: relative;
     display: inline-block;
-    vertical-align: 50px;
-}
+    width:400px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 360px;
+    box-shadow: 0px 8px 20px 0px rgb(0, 0, 0);
+    padding: 10px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-@media screen (max-width:500px)
-{
-    body {
-        display:inline-block;
-        margin-left:5000px;
 
-    }
-}
 
 
 
