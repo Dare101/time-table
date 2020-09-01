@@ -46,19 +46,16 @@ nav li{
     text-decoration-color: orangered;
 }
 
-
-
 #clock{
     text-align: center;
 }
 
 #table {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  
-}
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
 
 #table ul{
     text-align: center;
@@ -117,7 +114,6 @@ nav li{
 }
 
 
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -133,17 +129,12 @@ nav li{
     padding: 10px 16px;
     z-index: 1;
     border-radius: 20px;
+    text-align:center;
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
-  
-
-
-
 
 
 
